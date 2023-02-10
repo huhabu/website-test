@@ -2,16 +2,24 @@
 layout: page
 ---
 
+<div class="container">
+  <div class="row">
+    {% for track in site.tracks %}
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">{{ track.title }}</h5>
+            <p class="card-text">{{ track.description }}</p>
+          </div>
+          <div class="card-footer">
+            <a href="{{ track.url }}" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
 
-{{ content }}
-<ul>
-  {% for track in site.tracks %}
-    <li>
-      <h2><a href="{{ track.url }}">{{ track.title }}</a></h2>
-      <p>{{ track.description }}</p>
-    </li>
-  {% endfor %}
-</ul>
 
 <h1>Judges</h1>
 
