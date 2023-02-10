@@ -12,6 +12,7 @@ Given a specification of the zkrollup computation and a reference circuit compil
 
 Submit a writeup explaining the optimizations, the improvement on the prover time and any trade-off on the proof size/verifier time. The prize will be given to submissions with the fastest prover time.
 
+
 **Here is some bold text**
 
 ## Here is a secondary heading

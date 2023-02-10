@@ -12,6 +12,21 @@ Given a specification of the zkrollup computation and a reference circuit compil
 
 Submit a writeup explaining the optimizations, the improvement on the prover time and any trade-off on the proof size/verifier time. The prize will be given to submissions with the fastest prover time.
 
+
+**Here is some bold text**
+
+## Here is a secondary heading
+
+Here's a useless table:
+
+| Number | Next number | Previous number |
+| :------ |:--- | :--- |
+| Five | Six | Four |
+| Ten | Eleven | Nine |
+| Seven | Eight | Six |
+| Two | Three | One |
+
+
 How about a yummy crepe?
 
 ![Crepe](https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg)
