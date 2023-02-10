@@ -20,7 +20,8 @@ author: #Some Person
 ###############################################
 
 navbar-links:
-  Home:
+  Home: "home"
+  About: "about"
   Apply: "apply"
 ################
 # --- Logo --- #
