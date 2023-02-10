@@ -2,22 +2,15 @@
 layout: page
 ---
 
-{{ content }}
 
-<!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-<ul class="posts-list list-unstyled" role="list">
-  {% for file in site.static_files %}
-    {% if file.path contains '_tracks/' %}
-      {% assign track = file.path | remove_first: '_tracks/' %}
-      {% assign track = track | remove: '.md' %}
-      <li class="post-preview">
-        <article>
-          <a href="{{ site.baseurl }}/tracks/{{ track }}">
-            <h2 class="post-title">{{ track | replace: '_', ' ' | capitalize }}</h2>
-          </a>
-        </article>
-      </li>
-    {% endif %}
+{{ content }}
+<h2>Tracks</h2>
+<ul>
+  {% for track in site.tracks %}
+    <li>
+      <h2><a href="{{ track.url }}">{{ track.title }}</a></h2>
+      <p>{{ track.description }}</p>
+    </li>
   {% endfor %}
 </ul>
 
