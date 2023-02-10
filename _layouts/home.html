@@ -6,24 +6,27 @@ layout: page
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head> 
 
-<div class="container">
+---
+layout: page
+---
+
+<div class="container my-5">
+  <h2 class="text-center mb-5">Tracks</h2>
   <div class="row">
     {% for track in site.tracks %}
-      <div class="col-md-12 mb-3">
+      <div class="col-md-4 mb-3">
         <div class="card h-100">
           <div class="card-body">
-            <h5 class="card-title">{{ track.title }}</h5>
+            <h5 class="card-title">
+              <a href="{{ track.url }}">{{ track.title }}</a>
+            </h5>
             <p class="card-text">{{ track.description }}</p>
-          </div>
-          <div class="card-footer">
-            <a href="{{ track.url }}" class="btn btn-primary">Learn More</a>
           </div>
         </div>
       </div>
     {% endfor %}
   </div>
 </div>
-
 
 
 <h1>Judges</h1>
