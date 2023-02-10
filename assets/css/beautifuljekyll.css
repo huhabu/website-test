@@ -1018,6 +1018,18 @@ pre {
   margin: 0 auto;
 }
 
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sponsor-logos img {
+  height: 150px;
+  width: auto;
+  margin: 10px;
+}
+
 /* Search bar */
 #beautifuljekyll-search-overlay {
   display: none;
