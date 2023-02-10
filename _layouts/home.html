@@ -2,10 +2,14 @@
 layout: page
 ---
 
+<head> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head> 
+
 <div class="container">
   <div class="row">
     {% for track in site.tracks %}
-      <div class="col-md-4 mb-3">
+      <div class="col-md-12 mb-3">
         <div class="card h-100">
           <div class="card-body">
             <h5 class="card-title">{{ track.title }}</h5>
@@ -19,6 +23,7 @@ layout: page
     {% endfor %}
   </div>
 </div>
+
 
 
 <h1>Judges</h1>
