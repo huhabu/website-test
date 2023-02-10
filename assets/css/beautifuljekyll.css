@@ -1025,8 +1025,8 @@ pre {
 }
 
 .sponsor-logos img {
-  width: 150px;
   height: 150px;
+  width: auto;
   margin: 10px;
 }
 
